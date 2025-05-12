@@ -10,3 +10,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add executable target
 add_executable(hello-world ${PROJECT_SOURCE_DIR}/src/main.cpp)
+
+# Installation rules
+install(TARGETS hello-world DESTINATION bin)
